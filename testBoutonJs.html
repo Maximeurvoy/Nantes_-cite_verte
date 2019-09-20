@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test bouton</title>
+	<link rel="stylesheet" type="text/css" href="styleTestBoutonJs.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+<body class="bodyJS">
+<!-- 
+	<div class="un"><p id="jaune">lorem et plein de truc</p></div>
+	<div class="deux"><p id="bleu">lorem et plein de truc</p></div>
+	<div class="trois"><p id="vert">lorem et plein de truc</p></div>
+
+	<button class="button is-primary" onclick="document.getElementById('jaune').style.color = 'yellow'; document.getElementById('bleu').style.color = 'transparent';document.getElementById('vert').style.color = 'transparent'";>
+ 	 jaune
+	</button>
+	<button class="button is-primary" onclick="document.getElementById('bleu').style.color = 'blue'; document.getElementById('jaune').style.color = 'transparent';document.getElementById('vert').style.color = 'transparent'";>
+ 	 bleu
+	</button>
+	<button class="button is-primary" onclick="document.getElementById('vert').style.color = 'green'; document.getElementById('bleu').style.color = 'transparent';document.getElementById('jaune').style.color = 'transparent'";>
+ 	 vert
+	</button>
+
+
+ -->
+
+
+
+	
+
+<!-- text bouton -->
+<!-- Modal -->
+<div class="modale" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-header">
+      <h2 class="h2JS">Le compostable !</h2>
+      <a href="#" class="btn-close closemodale" aria-hidden="true">&times;</a>
+    </div>
+    <div class="modal-body">
+      <p class="noire">Lorem etc...</p>
+  	</div>
+    <div class="modal-footer">
+  
+
+      <a href="#" class="btn closemodale vert" id="btn_ingresar">Refermer le bac</a>
+    </div>
+  </div>
+  
+</div>
+<!-- /Modal -->
+<!-- bleu -->
+<div class="bleu" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-header">
+      <h2 class="h2JS">Tous les déchets non triable</h2>
+      <a href="#" class="btn-close closemodale bleu" aria-hidden="true">&times;</a>
+    </div>
+    <div class="modal-body">
+      <p class="noire">Lorem etc.... </p>
+  	</div>
+    <div class="modal-footer">
+  
+
+      <a href="#" class="btn closemodale bleu" id="btn_ingresar ">Refermer le bac</a>
+    </div>
+  </div>
+  
+</div>
+<!-- /Modal -->
+<!-- jaune -->
+<div class="jaune" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-header">
+      <h2 class="h2JS">Les carton et plastique recyclable</h2>
+      <a href="#" class="btn-close closemodale jaune" aria-hidden="true">&times;</a>
+    </div>
+    <div class="modal-body">
+      <p class="noire">lorem etc... </p>
+  	</div>
+    <div class="modal-footer">
+  
+
+      <a href="#" class="btn closemodale jaune" id="btn_ingresar ">Refermer le bac</a>
+    </div>
+  </div>
+ 
+</div>
+<!-- /Modal -->
+  <h2 class="h1JS">Quoi dans quelle poubelle ?!</h1>
+  <p><a href="#" class="btn btn-big openmodale vert">Bac vert</a></p>
+
+  <p><a href="#" class="btn btn-big openbleu bleu">Bac bleu</a></p>
+  <p><a href="#" class="btn btn-big openjaune jaune">Bac jaune</a></p>
+
+
+<script type="text/javascript">
+
+/*ouverture de la div*/
+$('.openmodale').click(function (e) {
+         e.preventDefault();
+         $('.modale').addClass('opened');
+    });
+/*fermetire de la div*/
+$('.closemodale').click(function (e) {
+         e.preventDefault();
+         $('.modale').removeClass('opened');
+    });
+
+/*ouverture de la div bleu*/
+$('.openbleu').click(function (e) {
+         e.preventDefault();
+         $('.bleu').addClass('opened');
+    });
+/*fermetire de la div*/
+$('.closemodale').click(function (e) {
+         e.preventDefault();
+         $('.bleu').removeClass('opened');
+    });
+/*ouverture de la jaune*/
+$('.openjaune').click(function (e) {
+         e.preventDefault();
+         $('.jaune').addClass('opened');
+    });
+/*fermetire de la div*/
+$('.closemodale').click(function (e) {
+         e.preventDefault();
+         $('.jaune').removeClass('opened');
+    });
+
+</script>
+
+</body>
+</html>
